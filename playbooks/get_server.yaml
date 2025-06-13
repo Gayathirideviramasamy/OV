@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  collections:
+  - hpe.oneview
+  tasks:
+  - name: "Get Hardware Facts"
+    oneview_server_hardware_facts:
+        hostname: "10.25.10.150"
+        username: "Administrator"
+        password: "HP1nvent"
+        uri: "/rest/server-hardware/31353050-3237-4D32-3233-32303031514C"
+    register: data
+
+  - debug: msg="{{ data }}"
