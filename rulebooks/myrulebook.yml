@@ -10,4 +10,4 @@ rules:
     condition: event.message == "trigger"
     action:
       run_playbook:
-        name: ping.yml
+        name: test.yml
