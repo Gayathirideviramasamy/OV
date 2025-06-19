@@ -1,12 +1,13 @@
 ---
-name: Example Rulebook
+name: Sample Ping Rulebook
+hosts: all
 sources:
   - ansible.eda.generic:
       payload:
         message: "trigger"
 rules:
-  - name: Example Rule
+  - name: Run ping when triggered
     condition: event.message == "trigger"
     action:
       run_playbook:
-        name: example_playbook.yml
+        name: ping.yml
