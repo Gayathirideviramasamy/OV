@@ -1,6 +1,5 @@
 ---
 name: Example Rulebook
-hosts: all
 sources:
   - ansible.eda.generic:
       payload:
