@@ -1,6 +1,6 @@
 ---
 - name: Sample Ping Rulebook
-  hosts: all
+  hosts: localhost
   sources:
     - ansible.eda.generic:
         payload:
