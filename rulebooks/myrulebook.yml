@@ -9,5 +9,5 @@
     - name: Run ping when triggered
       condition: event.message == "trigger"
       action:
-        run_job_template:
-          name: ansible.eda.hello
+        debug:
+          msg: "Test rulebook"
