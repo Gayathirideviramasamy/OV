@@ -1,13 +1,13 @@
 ---
-name: Print Message Rulebook
-hosts: localhost
-sources:
-  - ansible.eda.generic:
-      payload:
-        message: "hello"
-rules:
-  - name: Print when hello is received
-    condition: event.message == "hello"
-    action:
-      debug:
-        msg: "Received hello event!"
+- name: Print Message Rulebook
+  hosts: localhost
+  sources:
+    - ansible.eda.generic:
+        payload:
+          message: "hello"
+  rules:
+    - name: Print when hello is received
+      condition: event.message == "hello"
+      action:
+        debug:
+          msg: "Received hello event!"
