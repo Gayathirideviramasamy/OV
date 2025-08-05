@@ -11,7 +11,7 @@
         hostname: "{{ oneview_ip }}"
         username: "{{ oneview_username }}"
         password: "{{ oneview_passwd }}"
-      delegate_to: localhost
+        delegate_to: localhost
         state: present
         data:
            hostname : '{{ ilo_ip }}'
